@@ -4171,3 +4171,13 @@ mysql> select * from Album
 10 rows in set (0.00 sec)
 
 mysql> exit
+mysql> select FirstName, LastName, Title from Employee
+    -> where Title = 'IT Staff';
++-----------+----------+----------+
+| FirstName | LastName | Title    |
++-----------+----------+----------+
+| Robert    | King     | IT Staff |
+| Laura     | Callahan | IT Staff |
++-----------+----------+----------+
+2 rows in set (0.00 sec)
+
