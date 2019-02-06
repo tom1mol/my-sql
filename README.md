@@ -1,5 +1,8 @@
 https://dev.mysql.com/doc/refman/5.7/en/mysql-commands.html             #URL for mysql command list
 
+github for chinook:
+https://github.com/lerocha/chinook-database/tree/master/ChinookDatabase/DataSources
+
 BASH:
 
 install Mysql:

@@ -88,4 +88,8 @@ Select all `Album` records where the `AlbumId` is 232;
 select * from Album
 where AlbumId = 232;
 
+CHALLENGE 
+select FirstName, LastName, Title from Employee
+    where Title = 'IT Staff;
+
 
