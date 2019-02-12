@@ -1,0 +1,13 @@
+How Many Customers is Employee 4 the Sales Support Agent For?
+
+
+select count(FirstName) from Customer
+where SupportRepId = 4;
+
+OUTPUT:
++------------------+
+| count(FirstName) |
++------------------+
+|               20 |
++------------------+
+1 row in set (0.01 sec)

@@ -1,0 +1,21 @@
+select count(*) from Customer;          #number of rows in query
+
+OUTPUT:
++----------+
+| count(*) |
++----------+
+|       59 |
++----------+
+1 row in set (0.01 sec)
+
+
+select count(*) from Customer
+where FirstName = "Frank";
+
+Output:
++----------+
+| count(*) |
++----------+
+|        2 |
++----------+
+1 row in set (0.01 sec)

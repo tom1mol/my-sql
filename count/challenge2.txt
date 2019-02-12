@@ -1,0 +1,17 @@
+How Many Customers is Jane Peacock the Sales Support Agent For?
+You'll need to join the Employee and Customer Tables for this one.
+Expected : 21
+
+
+select Employee.FirstName as Employee, count(Customer.FirstName) as Customer from Employee
+join Customer on Customer.SupportRepId = Employee.EmployeeId
+where Employee.FirstName = "Jane";
+
+
+output:
++----------+----------+
+| Employee | Customer |
++----------+----------+
+| Jane     |       21 |
++----------+----------+
+1 row in set (0.00 sec)
