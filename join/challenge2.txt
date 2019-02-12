@@ -1,0 +1,14 @@
+/*
+ join the track table to the Genre table, show the names of the tracks and genres in the results. 
+ Figure out the columns you can join on, any aliases that you need. Filter the results to only show 'Jazz' tracks
+
+
+Select every track name and the track's associated genre, where the
+name of the genre is "Jazz"
+*/
+
+solution:
+
+SELECT Track.Name, Genre.Name from Track
+    INNER JOIN Genre on Track.GenreId = Genre.GenreId
+    WHERE Genre.Name = 'Jazz';

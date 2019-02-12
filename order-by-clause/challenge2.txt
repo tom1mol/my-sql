@@ -1,0 +1,32 @@
+We need to fire the last three people hired.
+
+Select the EmployeeId, LastName, FirstName and HireDate of the 3 Employees with the most recent HireDate
+
+My solution:
+select concat(FirstName, " ", LastName) as Name,EmployeeId,  HireDate from Employee
+ORDER by HireDate desc
+limit 3;
+
+OUTPUT(my solution):
++----------------+------------+---------------------+
+| Name           | EmployeeId | HireDate            |
++----------------+------------+---------------------+
+| Laura Callahan |          8 | 2004-03-04 00:00:00 |
+| Robert King    |          7 | 2004-01-02 00:00:00 |
+| Steve Johnson  |          5 | 2003-10-17 00:00:00 |
++----------------+------------+---------------------+
+3 rows in set (0.00 sec)
+
+solution: 
+SELECT EmployeeId, LastName, FirstName, HireDate FROM Employee
+ORDER BY HireDate DESC
+LIMIT 3;
+OUTPUT:
++------------+----------+-----------+---------------------+
+| EmployeeId | LastName | FirstName | HireDate            |
++------------+----------+-----------+---------------------+
+|          8 | Callahan | Laura     | 2004-03-04 00:00:00 |
+|          7 | King     | Robert    | 2004-01-02 00:00:00 |
+|          5 | Johnson  | Steve     | 2003-10-17 00:00:00 |
++------------+----------+-----------+---------------------+
+3 rows in set (0.00 sec)

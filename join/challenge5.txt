@@ -1,0 +1,40 @@
+Find a playlist that contains only 1 track.
+
+
+
+SELECT COUNT(*) FROM Playlist.Name
+    WHERE Track = 1;
+    
+SELECT Track.Name, count(*) as occurances FROM Track
+    group by Track.Name
+    order by occurences desc, Track.Name;
+   
+    WHERE Track.name = 1;
+    
+    
+SELECT Playlist.Name AS Playlist, Track.Name AS Track, Album.Title AS Album, Artist.Name AS Artist FROM Playlist
+
+SELECT playlist.name FROM playlist 
+    INNER JOIN playlist_song ON playlist.id=playlist_song.playlistId 
+    INNER JOIN songs ON song.id=playlist_song.songid 
+    WHERE COUNT (song.id) = 1 GROUP BY playlist.id
+    
+    
+SELECT TrackId, COUNT(*) FROM Track
+    GROUP BY TrackId
+    ORDER BY = 1;
+    
+    
+
+Select Playlist.Name as Playlist, COUNT(*) From Playlist
+INNER JOIN PlaylistTrack on Playlist.PlaylistId = PlaylistTrack.PlaylistId
+INNER JOIN Track on PlaylistTrack.TrackId = Track.TrackId 
+INNER JOIN Album on Track.AlbumId = Album.AlbumId 
+INNER JOIN Artist on Album.ArtistId = Artist.ArtistId 
+GROUP BY Playlist
+Having COUNT(*) = 1;
+
+
+    
+
+    

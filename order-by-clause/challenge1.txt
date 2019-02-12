@@ -1,0 +1,22 @@
+Select the InvoiceDate, BillingAddress, and Total from the Invoices table, Ordered by InvoiceDate Descending
+
+
+select InvoiceDate, BillingAddress, Total from Invoice
+order by InvoiceDate desc;
+
+412 rows:
+
+OUTPUT: SAMPLE
++---------------------+-------------------------------------------+-------+
+| InvoiceDate         | BillingAddress                            | Total |
++---------------------+-------------------------------------------+-------+
+| 2013-12-22 00:00:00 | 12,Community Centre                       |  1.99 |
+| 2013-12-14 00:00:00 | Porthaninkatu 9                           | 13.86 |
+| 2013-12-09 00:00:00 | Rua dos Campeões Europeus de Viena, 4350  |  8.91 |
+| 2013-12-06 00:00:00 | 796 Dundas Street West                    |  5.94 |
+| 2013-12-05 00:00:00 | 319 N. Frances Street                     |  3.96 |
+| 2013-12-04 00:00:00 | 801 W 4th Street                          |  1.98 |
+| 2013-12-04 00:00:00 | 69 Salem Street                           |  1.98 |
+| 2013-11-21 00:00:00 | 541 Del Medio Avenue                      |  0.99 |
+| 2013-11-13 00:00:00 | Rilská 3174/6                             | 25.86 |
+| 2013-11-08 00:00:00 | 307 Macacha Güemes                        |  8.91 |
