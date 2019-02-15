@@ -1,0 +1,9 @@
+select min(LastName) from Customer;
+
+output:
++---------------+
+| min(LastName) |
++---------------+
+| Almeida       |
++---------------+
+1 row in set (0.01 sec)

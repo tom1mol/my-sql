@@ -1,0 +1,9 @@
+Search the LastName column for the name that would be last if they were sorted alphabetically.
+
+select max(LastName) from Customer;
+
++---------------+
+| max(LastName) |
++---------------+
+| Zimmermann    |
++---------------+

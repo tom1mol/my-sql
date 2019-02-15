@@ -1,0 +1,119 @@
+select count(*) from Track
+group by AlbumId;
+
+output(sample of 347 rows):
++----------+
+| count(*) |
++----------+
+|       10 |
+|        1 |
+|        3 |
+|        8 |
+|       15 |
+|       13 |
+------------
+                                        ----------------------------
+ we group by the AlbumID in the track table.Show the number of rows in each group and the AlbumID for each. 
+ 
+select AlbumId, count(*) from Track
+group by AlbumId;
+
+OUTPUT(sample):
+
++---------+----------+
+| AlbumId | count(*) |
++---------+----------+
+|       1 |       10 |
+|       2 |        1 |
+|       3 |        3 |
+|       4 |        8 |
+|       5 |       15 |
+|       6 |       13 |
+|       7 |       12 |
+---------------------
+
+                -----------------------------------------------------------------
+                
+select Album.Title, count(*) from Track
+inner join Album on Track.AlbumId = Album.AlbumId
+group by Track.AlbumId;                            #grouped by AlbumId in the Track table
+
+OUTPUT SAMPLE:
++-------------------------------------------------------------------------------------------------+----------+
+| Title                                                                                           | count(*) |
++-------------------------------------------------------------------------------------------------+----------+
+| For Those About To Rock We Salute You                                                           |       10 |
+| Balls to the Wall                                                                               |        1 |
+| Restless and Wild                                                                               |        3 |
+| Let There Be Rock                                                                               |        8 |
+| Big Ones                                                                                        |       15 |
+| Jagged Little Pill                                                                              |       13 |
+-------------------------------------------------------------------------------------------------------------
+
+                -------------------------------------------------------------------------------
+#cheapest track on each Album                
+                
+select AlbumId, Min(UnitPrice) from Track                   
+group by AlbumId;                                   
+
+OUTPUT SAMPLE:
++---------+----------------+
+| AlbumId | Min(UnitPrice) |
++---------+----------------+
+|       1 |           0.99 |
+|       2 |           0.99 |
+|       3 |           0.99 |
+|       4 |           0.99 |
+|       5 |           0.99 |
+|       6 |           0.99 |
+|       7 |           0.99 |
+|       8 |           0.99 |
+|       9 |           0.99 |
+
+                    -------------------------------------------------------
+Most expensive track on each album:        
+                   
+select AlbumId, max(UnitPrice) from Track
+group by AlbumId;
+
+            ----------------------------------------------------------------------------------
+          
+          TOTAL COST OF EACH ALBUM:
+          
+select AlbumId, round(sum(UnitPrice), 2) from Track
+group by AlbumId;
+
+
+output(sample):
++---------+--------------------------+
+| AlbumId | round(sum(UnitPrice), 2) |
++---------+--------------------------+
+|       1 |                     9.90 |
+|       2 |                     0.99 |
+|       3 |                     2.97 |
+|       4 |                     7.92 |
+|       5 |                    14.85 |
+|       6 |                    12.87 |
+|       7 |                    11.88 |
+|       8 |                    13.86 |
+            
+                                    --------------------------------------------
+                                    
+                                    
+JOIN ALBUM TABLE TO INCLUDE TITLE OF ALBUM:
+
+select Album.Title, round(sum(UnitPrice), 2) from Track
+inner join Album on Track.AlbumId = Album.AlbumId
+group by Track.AlbumId;
+
+OUTPUT SAMPLE:
+
++-------------------------------------------------------------------------------------------------+--------------------------+
+| Title                                                                                           | round(sum(UnitPrice), 2) |
++-------------------------------------------------------------------------------------------------+--------------------------+
+| For Those About To Rock We Salute You                                                           |                     9.90 |
+| Balls to the Wall                                                                               |                     0.99 |
+| Restless and Wild                                                                               |                     2.97 |
+| Let There Be Rock                                                                               |                     7.92 |
+| Big Ones                                                                                        |                    14.85 |
+| Jagged Little Pill                                                                              |                    12.87 |

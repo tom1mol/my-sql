@@ -1,0 +1,11 @@
+Take the values in the Total column of the invoice table and average them.
+
+select avg(Total) from Invoice;
+
+output:
++------------+
+| avg(Total) |
++------------+
+|   5.651942 |
++------------+
+1 row in set (0.01 sec)

@@ -1,0 +1,5 @@
+What is the date of birth of our oldest employee? Expected : 1947-09-19 00:00:00
+
+solution:
+
+select min(BirthDate) from Employee;

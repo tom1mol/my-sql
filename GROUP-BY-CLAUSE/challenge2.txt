@@ -1,0 +1,15 @@
+How much has been made in sales for the track "The Woman King". 
+
+
+select sum(InvoiceLine.UnitPrice * InvoiceLine.Quantity), Track.Name as Track from InvoiceLine
+join Track on InvoiceLine.TrackId = Track.TrackId
+where Track.Name = "THe Woman King";
+
+OUTPUT:
+
++---------------------------------------------------+----------------+
+| sum(InvoiceLine.UnitPrice * InvoiceLine.Quantity) | Track          |
++---------------------------------------------------+----------------+
+|                                              3.98 | The Woman King |
++---------------------------------------------------+----------------+
+1 row in set (0.00 sec)

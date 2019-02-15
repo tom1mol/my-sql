@@ -1,0 +1,16 @@
+Which Media Type is most popular? How could you answer this with a single query? 
+You probably cannot based on what you know so far. We will get there.
+For now, you can use a separate query for each media type so see how many tracks use it. Expected : MPEG audio file
+
+
+select MediaType.MediaTypeId as MediaType, count(Name) from MediaType;
+
+select Employee.FirstName as Employee, count(Customer.FirstName) as Customer from Employee
+join Customer on Customer.SupportRepId = Employee.EmployeeId
+where Employee.FirstName = "Jane";
+
+select Track.MediaTypeId as Track, count(MediaTypeId) from Track;
+
+select count(*) from MediaType 
+where Name  = "MPEG audio file";
+

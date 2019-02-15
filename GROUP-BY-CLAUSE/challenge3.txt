@@ -1,0 +1,24 @@
+Create a list of the top 5 acts by number of tracks. The table should include the name 
+of the artist and the number of tracks they have.
+we need to link from the Track.
+
+
+select Artist.Name as Artist, count(Track.TrackId) as Track from Artist
+join Album on Artist.ArtistId = Album.ArtistId
+join Track on Album.AlbumId = Track.AlbumId
+group by Artist.Name
+order by count(Artist.Name)
+desc limit 5;
+
+
+OUTPUT:
++--------------+-------+
+| Artist       | Track |
++--------------+-------+
+| Iron Maiden  |   213 |
+| U2           |   135 |
+| Led Zeppelin |   114 |
+| Metallica    |   112 |
+| Lost         |    92 |
++--------------+-------+
+5 rows in set (0.00 sec)
