@@ -1,0 +1,75 @@
+Working With Data   
+
+Data Fundamentals:   
+
+What is data?							https://youtu.be/EHv5GsBx31o
+Entities And Attributes						https://youtu.be/CflHxa_3e2M
+Where Is Data Stored?						https://youtu.be/fTMvzyV2bfY
+Where Data Comes From						https://youtu.be/6SxHeQIo2gQ
+How We Acquire New Data						https://youtu.be/MbHy4-T4cTA
+CRUD Operations							https://youtu.be/S3hz4zyHmJY
+Data Access Patterns						https://youtu.be/HwU6v1xY_U4
+
+Data Store Types:   
+
+Data store types overview					https://youtu.be/vTfLDmMo81E
+File Based Data Stores						https://youtu.be/LKHKdQ3U-MA
+JSON And XML							https://youtu.be/lJO84kXyiEc
+
+
+Database Fundamentals:
+
+An Introduction To Databases					https://youtu.be/fXJ5obOwTuI
+The Context Of A Database In Your Software			https://youtu.be/ho_C2KJ2ups
+An Introduction To Relational Databases				https://youtu.be/093QtD6Wdug
+Introduction To Document-Oriented Databases			https://youtu.be/BifiiOJ34z8
+NoSQL And Key-Value Databases					https://youtu.be/NAukhXgHsIM
+Specialised Databases & Summary Of Overview			https://youtu.be/BQFptpoGbls
+
+
+Relational Database Design:
+
+Relational Database Design Overview				https://youtu.be/-43BU3AI0Vs
+Conceptual Design Phase						https://youtu.be/s7dqsDJUIEw
+Logical Design Phase						https://youtu.be/AuKBCoj0a88
+Null Values							https://youtu.be/whCHg1S9R7o
+Physical Data Model						https://youtu.be/fblar3XKZNg
+Normalization							https://youtu.be/hqY5tTknIp4
+Structured Query Language (SQL)					https://youtu.be/SC2DGiEvinM
+
+
+
+A Database Management System In Action - MySQL:
+
+MySQL Introduction						https://youtu.be/qwEpqVHNGTI
+MySQL On Cloud9							https://youtu.be/05l2fpazT1A
+Running Scripts							https://youtu.be/WHIwQ4Vs7Xg
+The MySQL Command Line						https://youtu.be/lV2ypTzJHQA
+Querying The Database						https://youtu.be/X4AftIM8qlw
+
+
+
+
+
+Working With Data::
+
+SQL in action:
+
+introduction							https://youtu.be/mwZOb3uIKls
+SELECT								https://youtu.be/-qCGSspZ7mM
+The Where Clause						https://youtu.be/s6RKf4Fbq1c
+Join								https://youtu.be/ZmXJ32Xlk5s
+The ORDER BY Clause						https://youtu.be/i7L5jFtO1sA
+The MIN Function						https://youtu.be/oCD_cuxT25E
+The MAX Function						https://youtu.be/Of8oGd__b4o
+The AVG Function						https://youtu.be/gjC8FaHrDlA
+The ROUND Function						https://youtu.be/pl4ekI9Tcb4
+The SUM Function						https://youtu.be/V3x_Pzzd-BM
+The GROUP BY Clause						https://youtu.be/NFuwSLy2r30
+The INSERT Statement						https://youtu.be/S7sToZSMeRQ
+
+
+
+
+
+
