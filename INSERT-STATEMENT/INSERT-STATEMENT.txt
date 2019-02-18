@@ -1,0 +1,44 @@
+insert into MediaType (Name)
+values ("Test Media Type 1");
+
+
+
+insert into Album (Title, ArtistId)
+values ("Boy", 150);            #album boy...artist ID 150
+                                ------------------------------------
+
+select AlbumId from Album where Title = "Boy";
++---------+
+| AlbumId |
++---------+
+|     348 |
++---------+
+1 row in set (0.00 sec)
+
+                                ---------------------------------------
+                                
+select MediaTypeId from MediaType where Name = "Protected AAC audio file";
+
++-------------+
+| MediaTypeId |
++-------------+
+|           2 |
++-------------+
+1 row in set (0.00 sec)
+
+            ---------------------------------------------------------------------
+            
+select GenreId from Genre where Name = "Rock";
+
++---------+
+| GenreId |
++---------+
+|       1 |
++---------+
+1 row in set (0.00 sec)
+
+
+                        ------------------------------------------------
+                        
+insert into Track (Name, AlbumId, MediaTypeId, GenreId, Composer, Milliseconds, Bytes, UnitPrice)
+values("I Will Follow", 348, 2, 1, "U2", 22000, 1234, 0.99);
